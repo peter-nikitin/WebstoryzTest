@@ -13,6 +13,7 @@
 		6FD2582527413A6300BD2032 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD2582427413A6300BD2032 /* Preview Assets.xcassets */; };
 		6FD2582727413A6300BD2032 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2582627413A6300BD2032 /* Persistence.swift */; };
 		6FD2582A27413A6300BD2032 /* TestWebSotries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2582827413A6300BD2032 /* TestWebSotries.xcdatamodeld */; };
+		6FD2583227413B5800BD2032 /* WebstoryzPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 6FD2583127413B5800BD2032 /* WebstoryzPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD2583227413B5800BD2032 /* WebstoryzPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = TestWebSotries;
+			packageProductDependencies = (
+				6FD2583127413B5800BD2032 /* WebstoryzPackage */,
+			);
 			productName = TestWebSotries;
 			productReference = 6FD2581A27413A6200BD2032 /* TestWebSotries.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 6FD2581127413A6200BD2032;
+			packageReferences = (
+				6FD2583027413B5800BD2032 /* XCRemoteSwiftPackageReference "sdk-ios" */,
+			);
 			productRefGroup = 6FD2581B27413A6200BD2032 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6FD2583027413B5800BD2032 /* XCRemoteSwiftPackageReference "sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Webstoryz/sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6FD2583127413B5800BD2032 /* WebstoryzPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6FD2583027413B5800BD2032 /* XCRemoteSwiftPackageReference "sdk-ios" */;
+			productName = WebstoryzPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6FD2582827413A6300BD2032 /* TestWebSotries.xcdatamodeld */ = {

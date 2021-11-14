@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+          "version": "5.4.4"
+        }
+      },
+      {
+        "package": "WebstoryzPackage",
+        "repositoryURL": "https://github.com/Webstoryz/sdk-ios",
+        "state": {
+          "branch": null,
+          "revision": "9d06c43d41d74044a1af4c3867ea8acde5a3ee74",
+          "version": "1.0.19"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

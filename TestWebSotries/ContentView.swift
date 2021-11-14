@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreData
+import WebstoryzPackage
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
@@ -17,30 +18,11 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
-        }
-    }
+        SDK.thumbs(key: "DfaxfyESk6Z1ZCV8waVpmA2sggXeTBaJJTcmZkdn2mDAcbuJLmKwO9Xk6C65AHneSXJWVNicv6Oe4OBeVfDGlFp3pRmVcuFEFJkDVzfYeTBEMDlyIHvgE52ud6F4UFIB", onLoadFailed: {
+          print("onLoadFailed error" )
+            
+        })
+      }
 
     private func addItem() {
         withAnimation {
